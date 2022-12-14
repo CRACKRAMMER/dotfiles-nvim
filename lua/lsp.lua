@@ -40,6 +40,13 @@ require('lspconfig')['gopls'].setup{
 }
 require('lspconfig')['jdtls'].setup{
     on_attach = on_attach,
+    cmd = {
+        "jdtls",
+        "-configuration",
+        "/home/xiechengan/.cache/jdtls/config",
+        "-data",
+        vim.fn.getcwd().."/src"
+    }
 }
 require('lspconfig')['tsserver'].setup{
     on_attach = on_attach,

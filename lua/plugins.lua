@@ -13,9 +13,14 @@ return require('packer').startup(function(use)
   use 'hrsh7th/nvim-cmp'
   use 'L3MON4D3/LuaSnip'
   use 'saadparwaiz1/cmp_luasnip'
+  use 'honza/vim-snippets'
+  use 'yaegassy/coc-html-css-support'
   use 'onsails/lspkind-nvim' 
   use 'kevinhwang91/rnvimr'
   use 'mhartington/formatter.nvim'
+  use 'aca/emmet-ls'
+  use 'tpope/vim-surround'
+  use 'tpope/vim-repeat'
   use {
       'nvim-treesitter/nvim-treesitter',
       run = function() require('nvim-treesitter.install').update({ with_sync = true }) end,
@@ -33,4 +38,6 @@ return require('packer').startup(function(use)
   use 'numToStr/Comment.nvim'
   use 'wellle/targets.vim'
   use 'mg979/vim-visual-multi'
+  use 'voldikss/vim-floaterm'
+
 end)
